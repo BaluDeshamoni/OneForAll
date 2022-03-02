@@ -1,0 +1,135 @@
+@import '../../global.scss';
+
+$mcolor: linear-gradient(
+  to right bottom,
+  rgba(255, 255, 255, 0.7),
+  rgba(255, 255, 255, 0.3)
+);
+
+.skills {
+  width: 100%;
+  height: 100%;
+  background: $skills;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .bg {
+    width: 30px;
+    height: 100%;
+    left: 55px;
+    position: absolute;
+    background: $skillsb;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: $main1;
+    }
+  }
+
+  .content {
+    height: 75%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+    .skills_data {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .title {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h5 {
+          font-size: large;
+          color: $main;
+        }
+        span {
+          font-size: large;
+          color: $main;
+        }
+
+        .icon {
+          width: 70px;
+          height: 60px;
+        }
+      }
+
+      .bar {
+        width: 70%;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #1a3e61;
+        overflow: hidden;
+
+        .python {
+          height: 10px;
+          width: 90%;
+          background: $mcolor;
+        }
+        .react {
+          height: 10px;
+          width: 85%;
+          background: $mcolor;
+        }
+        .nodejs {
+          height: 10px;
+          width: 80%;
+          background: $mcolor;
+        }
+        .javascript {
+          height: 10px;
+          width: 80%;
+          background: $mcolor;
+        }
+        .cplusplus {
+          height: 10px;
+          width: 85%;
+          background: $mcolor;
+        }
+        .c {
+          height: 10px;
+          width: 85%;
+          background: $mcolor;
+        }
+        .java {
+          height: 10px;
+          width: 70%;
+          background: $mcolor;
+        }
+        .mysql {
+          height: 10px;
+          width: 85%;
+          background: $mcolor;
+        }
+        .html5 {
+          height: 10px;
+          width: 80%;
+          background: $mcolor;
+        }
+        .css3 {
+          height: 10px;
+          width: 80%;
+          background: $mcolor;
+        }
+      }
+    }
+  }
+}

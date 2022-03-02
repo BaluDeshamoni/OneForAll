@@ -1,0 +1,173 @@
+@import '../../global.scss';
+
+.works {
+  width: 100%;
+  height: 100%;
+  background: $works;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .bg {
+    width: 30px;
+    height: 100%;
+    left: 55px;
+    position: absolute;
+    background: $worksb;
+  }
+
+  .title {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: $main;
+    span {
+      font-size: 40px;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    height: 50px;
+    cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: -17px;
+
+    @include mobile {
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mobile {
+          width: 80%;
+          height: 160px;
+          margin: 15px 0;
+        }
+
+        .left {
+          flex: 4;
+          height: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .leftcontainer {
+            width: 80%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include mobile {
+              width: 90%;
+              height: 90%;
+            }
+
+            .imgcontainer {
+              width: 90%;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+
+              @include mobile {
+                width: 20px;
+                height: 20px;
+              }
+
+              img {
+                margin-right: 10px;
+                width: 35px;
+                background-color: rgb(230, 174, 185);
+                border-radius: 50%;
+                @include mobile {
+                  width: 20px;
+                }
+              }
+              h2 {
+                font-size: larger;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                @include mobile {
+                  font-size: 15px;
+                }
+              }
+            }
+
+            p {
+              font-size: 16px;
+              text-align: left;
+              @include mobile {
+                display: none;
+              }
+            }
+            a {
+              font-size: 23px;
+              font-weight: 600;
+              cursor: pointer;
+              width: 35%;
+              border-radius: 10px;
+              padding: 10px;
+              margin: 5px;
+              background: $works;
+              color: white;
+
+              @include mobile {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          img {
+            width: 520px;
+            height: 60vh;
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
+}
