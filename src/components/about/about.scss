@@ -6,18 +6,34 @@
   height: 100%;
   width: 100%;
 
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .bg {
     width: 30px;
     height: 100%;
     left: 55px;
     position: absolute;
     background: $aboutb;
+
+    @include mobile {
+      display: none;
+    }
   }
   .left {
     flex: 0.5;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    @include mobile {
+      flex: 0.3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .wrapper {
       width: 80%;
@@ -26,6 +42,16 @@
       align-items: center;
       flex-direction: column;
       row-gap: 40px;
+
+      @include mobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        row-gap: 0;
+      }
 
       .header {
         display: flex;
@@ -37,6 +63,9 @@
           margin: 0;
           padding: 0;
           color: $main1;
+          @include mobile {
+            font-size: x-large;
+          }
         }
       }
 
@@ -49,6 +78,9 @@
           border-radius: 20px;
           object-fit: cover;
         }
+        @include mobile {
+          display: none;
+        }
       }
       .info {
         display: flex;
@@ -58,8 +90,25 @@
         width: 60%;
         row-gap: 20px;
         text-align: center;
+        @include mobile {
+          width: 70%;
+          font-size: small;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          row-gap: 10px;
+        }
 
         .boxes {
+          @include mobile {
+            padding: 0;
+            margin: 0;
+            font-size: small;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 40%;
+          }
           height: 100%;
           width: 100%;
           display: flex;
@@ -93,11 +142,19 @@
         .description {
           font-size: medium;
           font-family: sans-serif;
+
+          @include mobile {
+            font-size: small;
+            font-family: sans-serif;
+          }
         }
       }
     }
   }
   .right {
+    @include mobile {
+      flex: 0.7;
+    }
     flex: 0.5;
     display: flex;
     align-items: center;
@@ -110,6 +167,11 @@
       justify-content: space-evenly;
       flex-direction: column;
       row-gap: 30px;
+      @include mobile {
+        width: 75%;
+        height: 80%;
+        row-gap: 0;
+      }
 
       .main {
         display: flex;
@@ -121,6 +183,10 @@
           padding: 0;
           margin: 0;
           color: $main1;
+
+          @include mobile {
+            font-size: x-large;
+          }
         }
       }
 
@@ -130,12 +196,19 @@
         justify-content: space-evenly;
         width: 20%;
         font-size: x-large;
+        @include mobile {
+          display: none;
+        }
       }
 
       .data {
         display: flex;
 
         .dat {
+          @include mobile {
+            column-gap: 0;
+            row-gap: 0;
+          }
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr 1fr;
@@ -156,11 +229,19 @@
                 margin: 8px;
                 padding: 0;
                 color: $main1;
+                @include mobile {
+                  margin: 0;
+                  font-size: small;
+                }
               }
               span {
                 font-size: larger;
                 margin: 4px;
                 padding-bottom: 6px;
+                @include mobile {
+                  font-size: smaller;
+                  padding: 0;
+                }
               }
 
               .calendar {
@@ -170,6 +251,9 @@
                 align-items: center;
                 font-size: large;
                 color: $main;
+                @include mobile {
+                  font-size: smaller;
+                }
               }
             }
           }
@@ -183,6 +267,15 @@
           top: 30vh;
           height: 38%;
           position: fixed;
+          @include mobile {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 71%;
+            top: 40vh;
+            height: 40%;
+            position: fixed;
+          }
           .round {
             width: 15px;
             height: 10%;

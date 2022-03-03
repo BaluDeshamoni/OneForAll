@@ -23,6 +23,14 @@
     padding: 0;
     margin: 0;
     color: $main;
+
+    @include mobile {
+      top: 6vh;
+      height: 7%;
+      width: 100%;
+      text-align: center;
+      font-size: medium;
+    }
   }
 
   .content {
@@ -31,6 +39,7 @@
     display: flex;
     justify-content: center;
     margin-top: 60px;
+
     .wrapper {
       width: 90%;
       height: 80%;
@@ -43,6 +52,11 @@
         font-size: 22px;
         text-align: center;
         color: $main;
+
+        @include mobile {
+          font-size: large;
+          text-align: center;
+        }
       }
 
       .top {
@@ -51,7 +65,19 @@
         justify-content: center;
         column-gap: 50px;
 
+        @include mobile {
+          flex-direction: column;
+        }
         .video {
+          .vid {
+            height: 450px;
+            width: 750px;
+            @include mobile {
+              height: 200px;
+              width: 300px;
+            }
+          }
+
           .not {
             display: flex;
             align-items: center;
@@ -62,11 +88,18 @@
               width: 700px;
               z-index: 1;
               cursor: pointer;
+              @include mobile {
+                height: 200px;
+                width: 300px;
+              }
             }
             span {
               position: absolute;
               font-size: xx-large;
               font-weight: bold;
+              @include mobile {
+                font-size: large;
+              }
             }
             &:hover {
               img {
@@ -92,17 +125,28 @@
             span {
               color: $main;
             }
+            @include mobile {
+              margin-top: 10px;
+              color: $main1;
+              font-size: x-large;
+            }
           }
           .tec {
             flex: 0.6;
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            @include mobile {
+              margin-top: 15px;
+              margin-bottom: 10px;
+            }
             .title1 {
               font-size: x-large;
               font-weight: bold;
               color: $main1;
+              @include mobile {
+                font-size: large;
+              }
             }
 
             .data {
@@ -110,6 +154,11 @@
               display: flex;
               align-items: center;
               flex-direction: column;
+              @include mobile {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 0;
+              }
               .cont {
                 width: 100%;
                 display: flex;
@@ -119,6 +168,10 @@
                   font-size: larger;
                   margin: 8px;
                   color: $main;
+                  @include mobile {
+                    font-size: small;
+                    margin: 0;
+                  }
                 }
               }
             }
@@ -138,6 +191,10 @@
     > * {
       font-size: xx-large;
       cursor: pointer;
+    }
+    @include mobile {
+      width: 95%;
+      margin-right: 10px;
     }
   }
 }

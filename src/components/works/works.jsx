@@ -37,8 +37,8 @@ const Works = () => {
     {
       id: '3',
       title: 'Cbit Student Service',
-      icon: './assets/writing.png',
-      img: 'assets/stu.png',
+      icon: './assets/globe.png',
+      img: 'assets/student.jpg',
       video: 'https://www.youtube.com/watch?v=N8BZvfRD_eU',
       desc: ' Developed for students, this is similar to Quora where questions are asked and answers can be posted.Used firebase for authentication,storage and deployed on heroku',
       tec: [' React', ' Redux', ' Firebase'],

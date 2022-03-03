@@ -28,7 +28,7 @@ const About = () => {
           scale: 0,
         }}
         animate={{
-          x: 1460,
+          x: 1475,
           fontSize: '16px',
           y: 485,
           color: 'black',
@@ -46,9 +46,9 @@ const About = () => {
           scale: 0,
         }}
         animate={{
-          x: 1463,
+          x: 1478,
           fontSize: '16px',
-          y: 520,
+          y: 523,
           color: 'black',
           opacity: 1,
           scale: 1,
@@ -59,12 +59,7 @@ const About = () => {
       </motion.span>
       <motion.div className='bg'></motion.div>
       <motion.div className='left'>
-        <motion.div
-          animate={{
-            x: 60,
-          }}
-          className='wrapper'
-        >
+        <motion.div className='wrapper'>
           <motion.div className='header'>
             <motion.h1 className='title'>
               {t1.split('').map((letter, id) => (

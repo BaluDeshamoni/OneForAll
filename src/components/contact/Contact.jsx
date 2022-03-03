@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import { Phone, Home, Mail, GitHub, Code, LinkedIn } from '@material-ui/icons'
-import './contact.css'
+import './contact.scss'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {

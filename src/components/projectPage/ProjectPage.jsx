@@ -102,10 +102,9 @@ const ProjectPage = ({ open, setOpen, data }) => {
                 </div>
               ) : (
                 <VideoPlayer
+                  className='vid'
                   src={data.video}
                   poster={data.img}
-                  width='750'
-                  height='450'
                   playbackRates={[0.5, 1, 1.5, 2]}
                 />
               )}

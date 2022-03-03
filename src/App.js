@@ -32,9 +32,8 @@ function App() {
               <Contact />,
             ]}
             style={{
-              height: '97vh',
-              width: '98vw',
-              margin: '10px 8px',
+              height: '97.6vh',
+              width: '99vw',
               borderRadius: '20px',
             }}
           />
