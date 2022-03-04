@@ -33,6 +33,7 @@
     margin-top: 10px;
     padding: 0;
     @include mobile {
+      margin-top: 40px;
       font-size: 45px;
       margin-bottom: 10px;
     }
@@ -52,7 +53,7 @@
     position: relative;
     overflow: hidden;
     @include mobile {
-      width: 75%;
+      width: 70%;
       height: 85%;
       display: grid;
       top: 0;
@@ -66,8 +67,8 @@
       cursor: pointer;
       overflow: hidden;
       @include mobile {
-        height: 80px;
-        width: 130px;
+        height: 110px;
+        width: 145px;
       }
     }
     span {
