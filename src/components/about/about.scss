@@ -29,6 +29,7 @@
     display: flex;
 
     @include mobile {
+      margin-top: 10px;
       flex: 0.3;
       display: flex;
       align-items: center;
@@ -50,7 +51,7 @@
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
-        row-gap: 0;
+        row-gap: 15px;
       }
 
       .header {
@@ -64,7 +65,7 @@
           padding: 0;
           color: $main1;
           @include mobile {
-            font-size: x-large;
+            font-size: 30px;
           }
         }
       }
@@ -91,12 +92,12 @@
         row-gap: 20px;
         text-align: center;
         @include mobile {
-          width: 70%;
+          width: 80%;
           font-size: small;
           display: flex;
           align-items: center;
-          justify-content: space-around;
-          row-gap: 10px;
+          justify-content: space-evenly;
+          row-gap: 20px;
         }
 
         .boxes {
@@ -106,7 +107,7 @@
             font-size: small;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
             height: 40%;
           }
           height: 100%;
@@ -144,7 +145,7 @@
           font-family: sans-serif;
 
           @include mobile {
-            font-size: small;
+            font-size: 15px;
             font-family: sans-serif;
           }
         }
@@ -168,7 +169,7 @@
       flex-direction: column;
       row-gap: 30px;
       @include mobile {
-        width: 75%;
+        width: 80%;
         height: 80%;
         row-gap: 0;
       }
@@ -185,7 +186,7 @@
           color: $main1;
 
           @include mobile {
-            font-size: x-large;
+            font-size: 30px;
           }
         }
       }
@@ -206,7 +207,7 @@
 
         .dat {
           @include mobile {
-            column-gap: 0;
+            column-gap: 10px;
             row-gap: 0;
           }
           display: grid;
@@ -231,7 +232,7 @@
                 color: $main1;
                 @include mobile {
                   margin: 0;
-                  font-size: small;
+                  font-size: 15px;
                 }
               }
               span {
@@ -252,6 +253,7 @@
                 font-size: large;
                 color: $main;
                 @include mobile {
+                  width: 80%;
                   font-size: smaller;
                 }
               }
@@ -271,12 +273,15 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            width: 71%;
-            top: 40vh;
-            height: 40%;
+            width: 80%;
+            top: 45vh;
+            height: 28%;
             position: fixed;
           }
           .round {
+            @include mobile {
+              width: 10px;
+            }
             width: 15px;
             height: 10%;
             border-radius: 50%;

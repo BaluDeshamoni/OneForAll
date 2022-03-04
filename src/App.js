@@ -8,6 +8,7 @@ import About from './components/about/About'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import Loader from './components/loader/Loader'
+import './app.scss'
 function App() {
   const [loading, isLoading] = useState(true)
 
@@ -21,7 +22,7 @@ function App() {
       {loading === true ? (
         <Loader />
       ) : (
-        <motion.div className='app'>
+        <div className='app'>
           <LiquidSwipe
             components={[
               <Intro />,
@@ -31,13 +32,8 @@ function App() {
               <Works />,
               <Contact />,
             ]}
-            style={{
-              height: '97.6vh',
-              width: '99vw',
-              borderRadius: '20px',
-            }}
           />
-        </motion.div>
+        </div>
       )}
     </>
   )

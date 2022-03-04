@@ -25,7 +25,7 @@
     color: $main;
 
     @include mobile {
-      top: 6vh;
+      top: 4vh;
       height: 7%;
       width: 100%;
       text-align: center;
@@ -54,6 +54,7 @@
         color: $main;
 
         @include mobile {
+          width: 80%;
           font-size: large;
           text-align: center;
         }
@@ -138,14 +139,13 @@
             align-items: center;
             @include mobile {
               margin-top: 15px;
-              margin-bottom: 10px;
             }
             .title1 {
               font-size: x-large;
               font-weight: bold;
               color: $main1;
               @include mobile {
-                font-size: large;
+                font-size: x-large;
               }
             }
 

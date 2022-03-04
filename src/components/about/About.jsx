@@ -28,9 +28,9 @@ const About = () => {
           scale: 0,
         }}
         animate={{
-          x: 1475,
+          x: 1493,
           fontSize: '16px',
-          y: 485,
+          y: 498,
           color: 'black',
           opacity: 1,
           scale: 1,
@@ -46,9 +46,9 @@ const About = () => {
           scale: 0,
         }}
         animate={{
-          x: 1478,
+          x: 1496,
           fontSize: '16px',
-          y: 523,
+          y: 540,
           color: 'black',
           opacity: 1,
           scale: 1,

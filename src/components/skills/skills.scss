@@ -45,7 +45,7 @@ $mcolor: linear-gradient(
       color: $main1;
 
       @include mobile {
-        font-size: x-large;
+        font-size: 40px;
       }
     }
   }
