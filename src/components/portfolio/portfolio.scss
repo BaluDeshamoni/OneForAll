@@ -33,7 +33,7 @@
     margin-top: 10px;
     padding: 0;
     @include mobile {
-      margin-top: 20px;
+      margin-top: 10px;
       font-size: 45px;
       margin-bottom: 10px;
     }
@@ -67,7 +67,7 @@
       cursor: pointer;
       overflow: hidden;
       @include mobile {
-        height: 100px;
+        height: 90px;
         width: 150px;
       }
     }
