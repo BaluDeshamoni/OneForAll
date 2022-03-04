@@ -24,6 +24,7 @@ function App() {
       ) : (
         <div className='app'>
           <LiquidSwipe
+            className='swipe'
             components={[
               <Intro />,
               <About />,
