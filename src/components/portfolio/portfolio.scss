@@ -54,7 +54,7 @@
     overflow: hidden;
     @include mobile {
       width: 70%;
-      height: 80%;
+      height: 85%;
       display: grid;
       top: 0;
       grid-template-columns: 1fr 1fr;
@@ -67,8 +67,8 @@
       cursor: pointer;
       overflow: hidden;
       @include mobile {
-        height: 80px;
-        width: 130px;
+        height: 100px;
+        width: 150px;
       }
     }
     span {
