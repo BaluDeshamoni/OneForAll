@@ -23,7 +23,7 @@ const Skills = () => {
     visible: { opacity: 1 },
     hover: {
       fontSize: '25px',
-      color: '#bdc9d3',
+      color: '#042242',
     },
   }
 

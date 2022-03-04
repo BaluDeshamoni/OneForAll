@@ -18,7 +18,7 @@ $mcolor: linear-gradient(
   @include mobile {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
   }
 
@@ -43,10 +43,11 @@ $mcolor: linear-gradient(
     h1 {
       margin: 0;
       padding: 0;
-      color: $main1;
-
+      color: $main;
+      font-size: 45px;
       @include mobile {
         font-size: 40px;
+        margin-top: 10px;
       }
     }
   }

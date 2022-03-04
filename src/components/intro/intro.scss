@@ -78,6 +78,11 @@
       justify-content: center;
       overflow: hidden;
 
+      @include mobile {
+        margin-top: 10px;
+        justify-content: flex-start;
+      }
+
       h1 {
         font-size: 50px;
         margin: 7px 7px;
