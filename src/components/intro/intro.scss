@@ -77,6 +77,9 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      @include mobile {
+        justify-content: space-evenly;
+      }
 
       h1 {
         font-size: 50px;
