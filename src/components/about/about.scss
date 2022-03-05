@@ -45,6 +45,11 @@
       flex-direction: column;
       row-gap: 40px;
 
+      @include mini {
+        height: 100%;
+        row-gap: 15px;
+      }
+
       @include mobile {
         width: 100%;
         height: 100%;
@@ -74,6 +79,10 @@
       .image {
         height: 320px;
         width: 300px;
+        @include mini {
+          height: 300px;
+          width: 280px;
+        }
         img {
           height: 100%;
           width: 100%;

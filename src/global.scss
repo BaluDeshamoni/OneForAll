@@ -28,3 +28,11 @@ $width: 768px;
     @content;
   }
 }
+
+$height: 562px;
+
+@mixin mini {
+  @media (max-height:#{$height}) {
+    @content;
+  }
+}

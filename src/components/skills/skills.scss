@@ -60,6 +60,11 @@ $mcolor: linear-gradient(
     grid-template-rows: 1fr 1fr 1fr 1fr;
     text-align: center;
 
+    @include mini {
+      height: 80%;
+      margin-bottom: 20px;
+    }
+
     @include mobile {
       height: 80%;
       width: 80%;

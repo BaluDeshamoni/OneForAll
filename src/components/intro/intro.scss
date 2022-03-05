@@ -45,6 +45,11 @@
       justify-content: center;
       overflow: hidden;
 
+      @include mini {
+        width: 550px;
+        height: 550px;
+      }
+
       @include mobile {
         display: flex;
         align-items: flex-start;
@@ -87,6 +92,7 @@
         font-size: 50px;
         margin: 7px 7px;
         padding: 7px 7px;
+        text-align: center;
 
         @include mobile {
           font-size: 30px;
@@ -94,6 +100,7 @@
       }
       h2 {
         margin: 7px 7px;
+        text-align: center;
         padding: 7px 7px;
         font-size: 34px;
         font-weight: 600;
@@ -103,6 +110,7 @@
         }
       }
       h3 {
+        text-align: center;
         margin: 7px 7px;
         padding: 7px 7px;
         font-size: 25px;

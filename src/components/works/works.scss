@@ -35,6 +35,15 @@
     span {
       font-size: 45px;
     }
+    @include mini {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      span {
+        font-size: 35px;
+      }
+    }
 
     @include mobile {
       height: 95%;
@@ -198,6 +207,10 @@
             width: 520px;
             height: 60vh;
             transform: rotate(-10deg);
+            @include mini {
+              width: 520px;
+              height: 75vh;
+            }
 
             @include mobile {
               width: 140px;
