@@ -176,6 +176,10 @@ button {
   font-size: medium;
   cursor: pointer;
   border-radius: 10px;
+  @include mini {
+    width: 20%;
+    padding: 15px 10px;
+  }
   @include mobile {
     width: 100%;
   }

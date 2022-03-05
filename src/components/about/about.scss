@@ -71,6 +71,7 @@
           padding: 0;
           color: $main1;
           @include mobile {
+            margin-top: 15px;
             font-size: 30px;
           }
         }
@@ -178,6 +179,9 @@
       justify-content: space-evenly;
       flex-direction: column;
       row-gap: 30px;
+      @include mini {
+        row-gap: 0;
+      }
       @include mobile {
         width: 80%;
         height: 80%;
@@ -218,6 +222,10 @@
         .dat {
           @include mobile {
             column-gap: 10px;
+            row-gap: 0;
+          }
+          @include mini {
+            column-gap: 0;
             row-gap: 0;
           }
           display: grid;
@@ -279,6 +287,9 @@
           top: 30vh;
           height: 38%;
           position: fixed;
+          @include mini {
+            height: 40%;
+          }
           @include mobile {
             display: flex;
             align-items: center;

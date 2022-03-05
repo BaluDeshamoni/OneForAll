@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .bg {
@@ -52,6 +53,9 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    @include mini {
+      width: 80%;
+    }
     @include mobile {
       width: 70%;
       height: 85%;

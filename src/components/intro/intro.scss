@@ -32,6 +32,9 @@
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+    @include mini {
+      margin-left: 30px;
+    }
     @include mobile {
       display: block;
     }
@@ -46,8 +49,8 @@
       overflow: hidden;
 
       @include mini {
-        width: 550px;
-        height: 550px;
+        width: 530px;
+        height: 530px;
       }
 
       @include mobile {

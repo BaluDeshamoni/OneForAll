@@ -18,7 +18,7 @@ $mcolor: linear-gradient(
   @include mobile {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -47,7 +47,6 @@ $mcolor: linear-gradient(
       font-size: 45px;
       @include mobile {
         font-size: 40px;
-        margin-top: 10px;
       }
     }
   }

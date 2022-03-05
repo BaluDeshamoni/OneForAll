@@ -25,7 +25,7 @@
     color: $main;
 
     @include mobile {
-      top: 4vh;
+      top: 6vh;
       height: 7%;
       width: 100%;
       text-align: center;
@@ -98,6 +98,10 @@
               width: 700px;
               z-index: 1;
               cursor: pointer;
+              @include mini {
+                height: 350px;
+                width: 700px;
+              }
               @include mobile {
                 height: 200px;
                 width: 300px;
@@ -191,7 +195,7 @@
   }
 
   .back {
-    margin: 10px;
+    margin-top: 30px;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -202,8 +206,8 @@
       cursor: pointer;
     }
     @include mobile {
-      width: 95%;
-      margin-right: 10px;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
