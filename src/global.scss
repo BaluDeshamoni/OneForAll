@@ -29,7 +29,7 @@ $width: 768px;
   }
 }
 
-$height: 562px;
+$height: 721px;
 
 @mixin mini {
   @media (max-height:#{$height}) {
