@@ -22,7 +22,7 @@
     top: 0;
     padding: 0;
     margin: 0;
-    color: $main;
+    color: $main1;
 
     @include mobile {
       top: 6vh;
@@ -199,15 +199,15 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 98%;
+    width: 97%;
     color: $main;
     > * {
       font-size: xx-large;
       cursor: pointer;
     }
     @include mobile {
-      align-items: center;
-      justify-content: center;
+      align-items: flex-end;
+      justify-content: flex-end;
     }
   }
 }

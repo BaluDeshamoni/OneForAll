@@ -13,7 +13,7 @@ const About = () => {
     visible: { opacity: 1 },
     hover: {
       fontSize: '25px',
-      color: 'rgb(243, 204, 204)',
+      color: '#bdc9d3',
     },
   }
 
@@ -22,41 +22,10 @@ const About = () => {
 
   return (
     <motion.div className='about'>
-      <motion.span
-        initial={{
-          opacity: 0,
-          scale: 0,
-        }}
-        animate={{
-          x: 1493,
-          fontSize: '16px',
-          y: 498,
-          color: 'black',
-          opacity: 1,
-          scale: 1,
-          position: 'absolute',
-        }}
-      >
-        Drag
-      </motion.span>
-
-      <motion.span
-        initial={{
-          opacity: 0,
-          scale: 0,
-        }}
-        animate={{
-          x: 1496,
-          fontSize: '16px',
-          y: 540,
-          color: 'black',
-          opacity: 1,
-          scale: 1,
-          position: 'absolute',
-        }}
-      >
-        Play
-      </motion.span>
+      <div className='play'>
+        <span>Drag</span>
+        <span>Play</span>
+      </div>
       <motion.div className='bg'></motion.div>
       <motion.div className='left'>
         <motion.div className='wrapper'>

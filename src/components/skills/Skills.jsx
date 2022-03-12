@@ -22,7 +22,7 @@ const Skills = () => {
   const spanVar = {
     visible: { opacity: 1 },
     hover: {
-      fontSize: '25px',
+      fontSize: '30px',
       color: '#042242',
     },
   }

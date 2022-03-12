@@ -14,7 +14,7 @@ const ProjectPage = ({ open, setOpen, data }) => {
     visible: { opacity: 1 },
     hover: {
       fontSize: '25px',
-      color: '#1a3e61',
+      color: '#bdc9d3',
     },
   }
 

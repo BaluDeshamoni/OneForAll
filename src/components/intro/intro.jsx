@@ -5,7 +5,7 @@ import { GitHub, Code, LinkedIn } from '@material-ui/icons'
 import './intro.scss'
 import { motion } from 'framer-motion'
 
-const Intro = ({ setCurrentSlide }) => {
+const Intro = () => {
   const textref = useRef()
 
   const defaultTransitions = {
@@ -37,14 +37,14 @@ const Intro = ({ setCurrentSlide }) => {
     visible: { opacity: 1 },
     hover: {
       fontSize: '25px',
-      color: '#2997d6',
+      color: '#bdc9d3',
     },
   }
   const spanVar = {
     visible: { opacity: 1 },
     hover: {
       fontSize: '40px',
-      color: '#2997d6',
+      color: '#bdc9d3',
     },
   }
 
@@ -255,6 +255,7 @@ const Intro = ({ setCurrentSlide }) => {
               <button className='but'>Get Resume</button>
             </a>
           </motion.div>
+          <span className='swp'>Swipe to see more</span>
         </motion.div>
       </motion.div>
     </motion.div>

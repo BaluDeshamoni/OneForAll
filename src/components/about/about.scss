@@ -6,6 +6,25 @@
   height: 100%;
   width: 100%;
 
+  .play {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    bottom: 165px;
+
+    @include mini {
+      right: 10px;
+      bottom: 100px;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+
   @include mobile {
     display: flex;
     flex-direction: column;

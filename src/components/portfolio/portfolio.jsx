@@ -10,7 +10,7 @@ const Portfolio = () => {
     visible: { opacity: 1 },
     hover: {
       fontSize: '32px',
-      color: 'rgb(243, 204, 204)',
+      color: '#bdc9d3',
     },
   }
   const defaultTransitions = {
