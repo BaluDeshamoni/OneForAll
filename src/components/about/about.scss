@@ -7,14 +7,14 @@
   width: 100%;
 
   .play {
-    height: 60px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     position: absolute;
     right: 10px;
-    bottom: 165px;
+    top: 68vh;
 
     @include mini {
       right: 10px;
@@ -237,6 +237,9 @@
 
       .data {
         display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
 
         .dat {
           @include mobile {
@@ -283,7 +286,7 @@
               }
 
               .calendar {
-                width: 50%;
+                width: 65%;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
@@ -302,21 +305,13 @@
           display: flex;
           align-items: center;
           flex-direction: column;
-          width: 50%;
-          top: 30vh;
-          height: 38%;
+          justify-content: center;
           position: fixed;
-          @include mini {
-            height: 40%;
-          }
+          margin-left: 40px;
+          height: 40%;
           @include mobile {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            width: 80%;
-            top: 45vh;
+            margin: 0;
             height: 28%;
-            position: fixed;
           }
           .round {
             @include mobile {

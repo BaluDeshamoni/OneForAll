@@ -4,13 +4,13 @@ import './skills.scss'
 const Skills = () => {
   const skills = [
     ['Python', '90%', 'python'],
-    ['React js', '85%', 'react'],
-    ['Node js', '80%', 'nodejs'],
+    ['React Js', '85%', 'react'],
+    ['Node Js', '80%', 'nodejs'],
     ['JavaScript', '80%', 'javascript'],
     ['C++', '85%', 'cplusplus'],
     ['C Language', '85%', 'c'],
     ['Java', '70%', 'java'],
-    ['SQL/MY SQL', '85%', 'mysql'],
+    ['SQL/My SQL', '85%', 'mysql'],
     ['HTML5', '80%', 'html5'],
     ['CSS3  ', '80%', 'css3'],
   ]
@@ -22,7 +22,7 @@ const Skills = () => {
   const spanVar = {
     visible: { opacity: 1 },
     hover: {
-      fontSize: '30px',
+      fontSize: '36px',
       color: '#042242',
     },
   }

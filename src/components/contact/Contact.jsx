@@ -34,7 +34,7 @@ const Contact = () => {
   const spanVar = {
     visible: { opacity: 1 },
     hover: {
-      fontSize: '38px',
+      fontSize: '33px',
       color: '#bdc9d3',
     },
   }

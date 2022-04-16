@@ -6,7 +6,7 @@ const Works = () => {
   const spanVar = {
     visible: { opacity: 1 },
     hover: {
-      fontSize: '30px',
+      fontSize: '33px',
       color: '#042242',
     },
   }

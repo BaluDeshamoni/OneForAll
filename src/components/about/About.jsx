@@ -98,12 +98,12 @@ const About = () => {
                   <h4>Working</h4>
                 </div>
 
-                <span>5 projects</span>
+                <span>3 projects</span>
               </div>
             </div>
             <span className='description'>
-              Full stack developer, I create user friendly web sites.
-              Enthusiastic Programmer , Developer , Codaholic.
+              Full stack and React developer, I create user friendly web sites.
+              Enthusiastic Programmer , Developer and Codaholic.
             </span>
           </motion.div>
         </motion.div>
@@ -159,7 +159,8 @@ const About = () => {
                   <span>Chaitanya Bharathi Institue Of Technology</span>
                   <div className='calendar'>
                     <CalendarToday fontSize='small' />
-                    2019- 2023
+                    <div>2019- 2023</div>
+                    <div style={{color:"#042242"}}>GPA:9.1</div>
                   </div>
                 </div>
               </motion.div>
@@ -186,7 +187,8 @@ const About = () => {
                   <span>Narayana Junior college</span>
                   <div className='calendar'>
                     <CalendarToday fontSize='small' />
-                    2017- 2019
+                    <div>2017- 2019</div>
+                    <div style={{color:"#042242"}}>GPA:9.65</div>
                   </div>
                 </div>
               </motion.div>
@@ -213,7 +215,8 @@ const About = () => {
                   <span>Narayana Concept School</span>
                   <div className='calendar'>
                     <CalendarToday fontSize='small' />
-                    2011- 2017
+                    <div>2011- 2017</div> 
+                    <div style={{color:"#042242"}}>GPA:9.8</div>
                   </div>
                 </div>
               </motion.div>
