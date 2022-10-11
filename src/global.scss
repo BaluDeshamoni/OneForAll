@@ -1,0 +1,39 @@
+$maincolor: #15023a;
+
+$main: #bdc9d3;
+$main1: #042242;
+$main_title: rgb(245, 255, 250);
+
+$intro: linear-gradient(to bottom, #1a3e61 0%, #788188 100%);
+$introb: #788188;
+
+$about: linear-gradient(to bottom, #788188 0%, #1a3e61 100%);
+$aboutb: #1a3e61;
+
+$skills: linear-gradient(to bottom, #1a3e61 0%, #788188 100%);
+$skillsb: #788188;
+
+$portfolio: linear-gradient(to bottom, #788188 0%, #1a3e61 100%);
+$portfoliob: #1a3e61;
+
+$works: linear-gradient(to bottom, #1a3e61 0%, #788188 100%);
+$worksb: #788188;
+
+$project: linear-gradient(to bottom, #788188 0%, #1a3e61 100%);
+$projectb: #ffd89b;
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content;
+  }
+}
+
+$height: 721px;
+
+@mixin mini {
+  @media (max-height:#{$height}) {
+    @content;
+  }
+}

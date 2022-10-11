@@ -1,0 +1,212 @@
+@import "../../global.scss";
+
+.project_outer {
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000000;
+  transition: all 1s ease;
+  &.active {
+    top: 0;
+  }
+  .project {
+    width: 90%;
+    height: 90%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    .main_top {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .title {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $main_title;
+        @include mobile {
+          text-align: center;
+          font-size: medium;
+        }
+      }
+      .back {
+        color: $main;
+        > * {
+          font-size: xx-large;
+          cursor: pointer;
+        }
+        @include mobile {
+        }
+      }
+    }
+
+    .content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 60px;
+      @include mobile {
+        margin-top: 0;
+      }
+      .wrapper {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 50px;
+        @include mini {
+          row-gap: 20px;
+        }
+
+        .des {
+          font-size: x-large;
+          text-align: center;
+          color: $main;
+          @include mini {
+            font-size: x-large;
+          }
+          @include mobile {
+            width: 80%;
+            font-size: large;
+            text-align: center;
+          }
+        }
+
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 50px;
+
+          @include mobile {
+            flex-direction: column;
+          }
+          .video {
+            .vid {
+              height: 450px;
+              width: 750px;
+              @include mini {
+                height: 350px;
+                width: 700px;
+              }
+              @include mobile {
+                height: 200px;
+                width: 300px;
+              }
+            }
+
+            .not {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              img {
+                height: 450px;
+                width: 700px;
+                z-index: 1;
+                cursor: pointer;
+                @include mini {
+                  height: 350px;
+                  width: 700px;
+                }
+                @include mobile {
+                  height: 200px;
+                  width: 300px;
+                }
+              }
+              span {
+                position: absolute;
+                font-size: xx-large;
+                font-weight: bold;
+                @include mobile {
+                  font-size: large;
+                }
+              }
+              &:hover {
+                img {
+                  opacity: 0.4;
+                }
+              }
+            }
+          }
+
+          .right {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .demo {
+              flex: 0.4;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: x-large;
+              font-weight: bolder;
+              span {
+                color: $main;
+              }
+              @include mobile {
+                margin-top: 10px;
+                color: $main1;
+                font-size: x-large;
+              }
+            }
+            .tec {
+              flex: 0.6;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              @include mobile {
+                margin-top: 15px;
+              }
+              .title1 {
+                font-size: x-large;
+                font-weight: bold;
+                color: rgb(0, 191, 255);
+                @include mobile {
+                  font-size: x-large;
+                }
+              }
+
+              .data {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                @include mobile {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr 1fr;
+                  margin: 0;
+                }
+                .cont {
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+
+                  span {
+                    font-size: x-large;
+                    margin: 8px;
+                    color: $main;
+                    @include mobile {
+                      font-size: small;
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
