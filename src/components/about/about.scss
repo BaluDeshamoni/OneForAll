@@ -81,6 +81,15 @@
         justify-content: space-evenly;
         flex-direction: column;
       }
+      @include mobileL {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        row-gap: 0;
+        flex-direction: column;
+      }
 
       .header {
         width: 100%;
@@ -91,8 +100,14 @@
           color: $main_title;
 
           @include mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 15px;
             font-size: 30px;
+          }
+          @include mobileL {
+            font-size: x-large;
           }
         }
       }
@@ -105,12 +120,31 @@
           @include mobile {
             font-size: large;
           }
+          @include mobileL {
+            font-size: medium;
+          }
         }
       }
 
       .exp {
         .title {
           color: $main_title;
+          @include mobileL {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            padding: 0;
+            margin: 0;
+          }
+          @include mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            padding: 0;
+            margin: 0;
+          }
         }
 
         .exp_title {
@@ -120,6 +154,9 @@
           justify-content: space-between;
           width: 90%;
           color: rgb(135, 206, 250);
+          @include mobileL {
+            font-size: large;
+          }
 
           .time {
             font-size: large;
@@ -133,6 +170,10 @@
           color: rgb(169, 169, 169);
           @include mobile {
             font-size: large;
+          }
+          @include mobileL {
+            font-size: medium;
+            padding: 4px 8px;
           }
         }
       }
@@ -190,6 +231,11 @@
         height: 80%;
         row-gap: 0;
       }
+      @include mobileL {
+        width: 80%;
+        height: 80%;
+        row-gap: 0;
+      }
 
       .main {
         display: flex;
@@ -205,6 +251,9 @@
           @include mobile {
             font-size: 30px;
           }
+          @include mobileL {
+            font-size: large;
+          }
         }
       }
 
@@ -213,7 +262,10 @@
         position: relative;
         align-items: center;
         justify-content: center;
-
+        @include mobileL {
+          width: 100%;
+          height: 100%;
+        }
         .dat {
           @include mobile {
             column-gap: 10px;
@@ -223,6 +275,12 @@
             column-gap: 0;
             row-gap: 0;
           }
+          @include mobileL {
+            column-gap: 0px;
+            row-gap: 0;
+            grid-template-columns: 2fr 2fr;
+          }
+
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr 1fr;
@@ -247,6 +305,9 @@
                   margin: 0;
                   font-size: 15px;
                 }
+                @include mobileL {
+                  font-size: 15px;
+                }
               }
               span {
                 font-size: x-large;
@@ -254,6 +315,10 @@
                 padding-bottom: 6px;
                 color: rgb(211, 211, 211);
                 @include mobile {
+                  font-size: smaller;
+                  padding: 0;
+                }
+                @include mobileL {
                   font-size: smaller;
                   padding: 0;
                 }
@@ -283,10 +348,12 @@
           position: fixed;
           margin-left: 40px;
           height: 50%;
+
           @include mobile {
             margin: 0;
-            height: 24%;
+            height: 28%;
           }
+
           .round {
             @include mobile {
               width: 10px;
@@ -314,12 +381,21 @@
 
       .data :nth-child(1) {
         grid-area: 1/1 / span 1 / span 1;
+        @include mobileL {
+          grid-area: 1/2 / span 1 / span 1;
+        }
       }
       .data :nth-child(2) {
         grid-area: 2/2 / span 1 / span 1;
+        @include mobileL {
+          grid-area: 2/1 / span 1 / span 1;
+        }
       }
       .data :nth-child(3) {
         grid-area: 3/1 / span 1 / span 1;
+        @include mobileL {
+          grid-area: 3/2 / span 1 / span 1;
+        }
       }
     }
   }

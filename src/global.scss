@@ -23,6 +23,13 @@ $project: linear-gradient(to bottom, #788188 0%, #1a3e61 100%);
 $projectb: #ffd89b;
 
 $width: 768px;
+$width1: 375px;
+
+@mixin mobileL {
+  @media (max-width:#{$width1}) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width:#{$width}) {

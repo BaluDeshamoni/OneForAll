@@ -200,7 +200,7 @@
                 font-weight: lighter;
               }
               @include mini {
-                width: 30%;
+                width: 40%;
               }
             }
           }
@@ -224,7 +224,7 @@
 
             @include mobile {
               width: 140px;
-              height: 22vh;
+              height: 25vh;
               transform: rotate(0deg);
             }
           }

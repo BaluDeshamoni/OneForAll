@@ -51,7 +51,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-top: 60px;
+      margin-top: 20px;
       @include mobile {
         margin-top: 0;
       }
@@ -73,6 +73,7 @@
           @include mini {
             font-size: x-large;
           }
+
           @include mobile {
             width: 80%;
             font-size: large;
@@ -187,6 +188,7 @@
                   grid-template-columns: 1fr 1fr 1fr;
                   margin: 0;
                 }
+
                 .cont {
                   width: 100%;
                   display: flex;

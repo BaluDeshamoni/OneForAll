@@ -41,8 +41,8 @@ const About = () => {
 
             <div className="about_me">
               <span className="description">
-                I am a passionate coder , Full stack and React developer. I am
-                an avid learner with great passion for technology and love to
+                I am a passionate coder , Full stack and React developer , an
+                avid learner with great passion for technology and love to
                 explore new domains and build innovative solutions.
               </span>
             </div>
@@ -67,7 +67,7 @@ const About = () => {
                 <div className="exp_desc">
                   <span className="description">
                     Developing an ecommerce application for clients to connect
-                    people with the services provided by their hospital
+                    people with the services provided by their diagnostics.
                   </span>
                 </div>
               </div>
