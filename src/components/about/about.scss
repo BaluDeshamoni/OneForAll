@@ -108,11 +108,15 @@
           }
           @include mobileL {
             font-size: x-large;
+            margin-top: 10px;
           }
         }
       }
 
       .about_me {
+        @include mobileL {
+          padding: 8px 2px;
+        }
         span {
           font-size: x-large;
           color: rgb(169, 169, 169);

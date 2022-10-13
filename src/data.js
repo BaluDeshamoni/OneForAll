@@ -12,7 +12,7 @@ export const All = [
   {
     id: "2",
     title: "Student Service",
-    img: "assets/student.jpg",
+    img: "assets/studentservice.jpg",
     video: "assets/studentservice.webm",
     desc: " Developed for students, this is similar to Quora where questions are asked and answers can be posted.Used firebase for authentication,storage and deployed on heroku",
     tec: [" React", " Redux", " Firebase"],
@@ -32,7 +32,7 @@ export const All = [
   {
     id: "4",
     title: "Signal clone",
-    img: "assets/chats.png",
+    img: "assets/chat.jpg",
     video: "assets/signal.webm",
     desc: " This is a chatting application which is similar to signal app where users can join the groups and start their conversation.Used firebase for authentication,storage and deployment.",
     tec: [" React Native", " Firebase"],
@@ -42,7 +42,7 @@ export const All = [
   {
     id: "5",
     title: "Student Recommendation",
-    img: "assets/recommendation.webp",
+    img: "assets/recommendation.png",
     video: "assets/recommendation.webm",
     desc: "An application which recommends courses,books and internships for students.Recommendations are given based on the user priorities",
     tec: ["Python ", " Machine Learning", " React", " Redux", " Firebase "],
