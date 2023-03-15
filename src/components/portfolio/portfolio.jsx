@@ -16,7 +16,7 @@ const Portfolio = () => {
   const defaultTransitions = {
     ease: [0.43, 0.13, 0.23, 0.96],
   };
-  const dur = [1.2, 2, 2.4, 2.9, 2.9, 3.1];
+ 
 
   const t1 = "Projects";
 
