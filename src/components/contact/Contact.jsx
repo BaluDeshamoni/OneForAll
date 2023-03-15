@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import { Home, Mail, GitHub, Code, LinkedIn } from "@material-ui/icons";
+import { Home, Mail, GitHub, LinkedIn } from "@material-ui/icons";
 import "./contact.scss";
 import emailjs from "@emailjs/browser";
 import { SiLeetcode, SiGeeksforgeeks, SiHackerrank } from "react-icons/si";
