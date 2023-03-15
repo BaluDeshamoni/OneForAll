@@ -1,5 +1,5 @@
 import "./about.scss";
-import { Work, WorkOutline, School, CalendarToday } from "@material-ui/icons";
+import { School, CalendarToday } from "@material-ui/icons";
 import { motion } from "framer-motion";
 
 const About = () => {
