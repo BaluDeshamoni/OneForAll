@@ -1,0 +1,72 @@
+@import "../../global.scss";
+
+.mains {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+
+  .in {
+    width: 98%;
+    height: 98%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    img {
+      height: 50%;
+      width: 50%;
+      object-fit: contain;
+    }
+
+    .loader {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.6s ease;
+
+      div {
+        border: 2px solid transparent;
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.6;
+        border-top-color: transparent !important;
+        border-bottom-color: transparent !important;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    .loader :nth-child(1) {
+      height: 90px;
+      width: 90px;
+      border-color: rgb(135, 206, 250);
+    }
+    .loader :nth-child(2) {
+      height: 75px;
+      width: 75px;
+      border-color: rgb(169, 169, 169);
+      animation-duration: 1.2s;
+    }
+    .loader :nth-child(3) {
+      height: 60px;
+      width: 60px;
+      border-color: rgb(135, 206, 250);
+    }
+  }
+}
