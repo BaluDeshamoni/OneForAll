@@ -8,8 +8,7 @@ import About from "./components/about/About";
 import { useEffect, useState } from "react";
 import Loader from "./components/loader/Loader";
 import "./app.scss";
-// import WorkProjectPage from "./components/WorkProjects/WorkPortfolio";
-import WorkPortfolio from "./components/WorkProjects/WorkPortfolio";
+
 function App() {
   const [loading, isLoading] = useState(true);
 
@@ -31,7 +30,6 @@ function App() {
               <About />,
               <Skills />,
               <Portfolio />,
-              // <WorkPortfolio />,
               <Works />,
               <Contact />,
             ]}
