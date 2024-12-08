@@ -62,7 +62,7 @@ const Contact = () => {
                     color: "rgba(255, 255, 255, 0.7)",
                   }}
                 />
-                baludeshamoni@gmail.com
+                baluchander2205@gmail.com
               </div>
               <div className="c-info-item">
                 <Home
@@ -71,7 +71,7 @@ const Contact = () => {
                     color: "rgba(255, 255, 255, 0.7)",
                   }}
                 />
-                Hyderabad , Telangana
+                Hyderabad , Telangana , India
               </div>
 
               <div className="c-info-item">

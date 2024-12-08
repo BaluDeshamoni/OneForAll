@@ -1,3 +1,271 @@
+// @import "../../global.scss";
+
+// .intro_bg {
+//   height: 100%;
+//   width: 100%;
+//   position: fixed;
+//   background: linear-gradient(145deg, #192839 50%, #1ab4e2 115%);
+//   opacity: 0.3;
+// }
+// .intro {
+//   display: flex;
+//   height: 100%;
+//   width: 100%;
+//   flex-direction: row-reverse;
+
+//   > * {
+//     z-index: 1000000;
+//   }
+
+//   .bg {
+//     width: 30px;
+//     height: 100%;
+//     left: 55px;
+//     position: absolute;
+//     background: $introb;
+
+//     @include mobile {
+//       display: none;
+//     }
+//   }
+
+//   @include mobile {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-evenly;
+//   }
+
+//   .left {
+//     flex: 0.5;
+//     overflow: hidden;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+//     margin-left: 20px;
+//     @include mini {
+//       margin-left: 30px;
+//     }
+//     @include mobile {
+//       display: block;
+//     }
+
+//     .header {
+//       width: 100%;
+
+//       h1 {
+//         margin: 0;
+//         padding: 0;
+//         color: $main_title;
+
+//         @include mobile {
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           margin-top: 15px;
+//           font-size: 30px;
+//         }
+//         @include mobileL {
+//           font-size: x-large;
+//           margin-top: 10px;
+//         }
+//       }
+//     }
+
+//     .about_me {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       flex-direction: column;
+//       @include mobileL {
+//         padding: 8px 2px;
+//       }
+//       span {
+//         font-size: x-large;
+//         color: rgb(169, 169, 169);
+//         padding: 10px 10px;
+
+//         @include mobile {
+//           font-size: large;
+//         }
+//         @include mobileL {
+//           font-size: medium;
+//         }
+//       }
+//     }
+
+//     // .imagecontainer {
+//     //   width: 600px;
+//     //   height: 600px;
+//     //   border-radius: 50%;
+//     //   display: flex;
+//     //   align-items: center;
+//     //   justify-content: center;
+//     //   overflow: hidden;
+
+//     //   @include mini {
+//     //     width: 530px;
+//     //     height: 530px;
+//     //   }
+
+//     //   @include mobile {
+//     //     display: flex;
+//     //     align-items: flex-start;
+//     //     justify-content: center;
+//     //     margin-right: 20px;
+//     //   }
+
+//     //   img {
+//     //     height: 100%;
+//     //     width: 100%;
+//     //     object-fit: contain;
+//     //     overflow: hidden;
+//     //     @include mobile {
+//     //       height: 55vh;
+//     //     }
+//     //   }
+//     // }
+//   }
+
+//   .right {
+//     z-index: 100000;
+//     flex: 0.5;
+//     display: flex;
+//     align-items: center;
+//     @include mobile {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//     }
+//     .wrapper {
+//       width: 80%;
+//       height: 50%;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: space-between;
+//       overflow: hidden;
+
+//       @include mobile {
+//         height: 100%;
+//         margin-top: 10px;
+//         justify-content: flex-start;
+//       }
+
+//       h1 {
+//         font-size: 50px;
+//         margin: 7px 7px;
+//         padding: 7px 7px;
+//         text-align: center;
+
+//         @include mobile {
+//           font-size: 30px;
+//         }
+//       }
+//       h2 {
+//         margin: 7px 7px;
+//         text-align: center;
+//         padding: 7px 7px;
+//         font-size: 34px;
+//         font-weight: 600;
+//         @include mobile {
+//           font-size: 20px;
+//           text-align: center;
+//         }
+//       }
+//       h3 {
+//         text-align: center;
+//         margin: 7px 7px;
+//         padding: 7px 7px;
+//         font-size: 25px;
+//         @include mobile {
+//           font-size: 20px;
+//           text-align: center;
+//         }
+//         span {
+//           font-size: inherit;
+//           color: #bdc9d3;
+//         }
+
+//         .ityped-cursor {
+//           animation: blink 1s infinite;
+//         }
+//         @keyframes blink {
+//           50% {
+//             opacity: 1;
+//           }
+//           100% {
+//             opacity: 0;
+//           }
+//         }
+//       }
+//       .icons {
+//         width: 30%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+
+//         @include mobile {
+//           width: 100%;
+//           display: flex;
+//         }
+
+//         > * {
+//           opacity: 0.5;
+//           color: black;
+//           margin: 5px;
+//           padding: 5px;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           background: linear-gradient(
+//             to right bottom,
+//             rgba(255, 255, 255, 0.7),
+//             rgba(255, 255, 255, 0.3)
+//           );
+//           border-radius: 20px;
+//           cursor: pointer;
+//           &:hover {
+//             opacity: 1;
+//           }
+//         }
+//       }
+//       .buttons {
+//         .but {
+//           @include mobile {
+//             width: 100%;
+//             font-size: medium;
+//             padding: 12px 10px;
+//             margin: 0;
+//           }
+//           opacity: 1;
+//           border-radius: 20px;
+//           background: linear-gradient(
+//             to right bottom,
+//             rgba(255, 255, 255, 0.7),
+//             rgba(255, 255, 255, 0.3)
+//           );
+//           width: 100%;
+//           font-size: larger;
+//           cursor: pointer;
+//           color: black;
+//           border: none;
+//           &:hover {
+//             opacity: 0.8;
+//           }
+//         }
+//       }
+//       .swp {
+//         display: none;
+//         @include mobile {
+//           display: block;
+//         }
+//       }
+//     }
+//   }
+// }
+
 @import "../../global.scss";
 
 .intro_bg {

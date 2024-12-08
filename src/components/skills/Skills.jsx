@@ -3,14 +3,14 @@ import "./skills.scss";
 
 const Skills = () => {
   const skills = [
-    ["Python", "90%", "python"],
     ["React Js", "85%", "react"],
-    ["Node Js", "80%", "nodejs"],
-    ["JavaScript", "80%", "javascript"],
-    ["C++", "85%", "cplusplus"],
-    ["C Language", "85%", "c"],
+    ["Spring", "85%", "spring", "spring-original-wordmark"],
+    ["AWS", "85%", "amazonwebservices", "amazonwebservices-plain-wordmark"],
     ["Java", "70%", "java"],
-    ["SQL/My SQL", "85%", "mysql"],
+    ["SQL / MongoDB ", "85%", "mysql"],
+    ["JavaScript", "80%", "javascript"],
+    ["Node Js", "80%", "nodejs"],
+    ["Python", "90%", "python"],
     ["HTML5", "80%", "html5"],
     ["CSS3  ", "80%", "css3"],
   ];
@@ -49,13 +49,17 @@ const Skills = () => {
         </div>
 
         <div className="content">
-          {skills.map((s) => (
+          {skills.map((s, i) => (
             <div className="skills_data">
               <div className="title">
                 <h2>{s[0]}</h2>
                 <img
                   className="icon"
-                  src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${s[2]}/${s[2]}-original.svg`}
+                  src={
+                    s.length > 3
+                      ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${s[2]}/${s[3]}.svg`
+                      : `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${s[2]}/${s[2]}-original.svg`
+                  }
                   alt="icon"
                 />
               </div>

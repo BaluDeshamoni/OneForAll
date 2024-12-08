@@ -10,7 +10,7 @@ const About = () => {
     },
   };
 
-  const t1 = "About Me";
+  const t1 = "Experience";
   const t2 = "Qualifications";
   const t3 = "Experience";
 
@@ -24,28 +24,6 @@ const About = () => {
         </div>
         <div className="left">
           <div className="wrapper">
-            <div className="header">
-              <h1 className="title">
-                {t1.split("").map((letter, id) => (
-                  <motion.span
-                    key={id}
-                    variants={spanVar}
-                    initial="visible"
-                    whileHover="hover"
-                  >
-                    {letter}
-                  </motion.span>
-                ))}
-              </h1>
-            </div>
-
-            <div className="about_me">
-              <span className="description">
-                I am a passionate coder , Full stack and React developer , an
-                avid learner with great passion for technology and love to
-                explore new domains and build innovative solutions.
-              </span>
-            </div>
             <div className="exp">
               <h1 className="title">
                 {t3.split("").map((letter, id) => (
@@ -61,27 +39,42 @@ const About = () => {
               </h1>
               <div className="exp1">
                 <div className="exp_title">
-                  <span>Awiskar Tech</span>
-                  <span className="time">Aug 2022</span>
+                  <span>J P Morgan Chase & Co -- SDE I</span>
+                  <span className="time">Feb'23 -- Present</span>{" "}
                 </div>
                 <div className="exp_desc">
                   <span className="description">
-                    Developing an ecommerce application for clients to connect
-                    people with the services provided by their diagnostics.
+                    Implemented Spring Batch workflows, Spring Boot, and React
+                    applications to optimize ETL pipelines and backend
+                    efficiency, reducing response time by more than 25%.
                   </span>
-                </div>
-              </div>
-              <div className="exp2">
-                <div className="exp_title">
-                  <span>Shape AI</span>
-                  <span className="time">Jul 2021</span>{" "}
-                </div>
-                <div className="exp_desc">
                   <span className="description">
-                    Developed an application using react js from scratch which
-                    is similar to a dashboard where day to day tasks are
-                    monitored
+                    Took complete ownership of 3 end-to-end applications,
+                    delivering them under critical deadlines, which resulted in
+                    a 90% reduction in manual intervention.
                   </span>
+                  <span className="description">
+                    Worked on the automation and modernization of 13 projects,
+                    streamlining 40% of Chase’s existing processes.
+                  </span>
+                  <span className="description">
+                    Recognized by the MD for developing an application that
+                    reduced manual intervention, saving 70+ hours of work
+                    monthly.
+                  </span>
+                </div>
+                <div className="exp2">
+                  <div className="exp_title">
+                    <span>Awiskar Tech -- Full Stack Developer</span>
+                    <span className="time">Aug'22 -- Jan'23</span>
+                  </div>
+                  <div className="exp_desc">
+                    <span className="description">
+                      Developed a full‑stack e‑commerce platform for a
+                      diagnostics, connecting users to their services, resulting
+                      in a 30% increase in bookings.
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

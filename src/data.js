@@ -7,7 +7,7 @@ export const All = [
     desc: " It is a full-stack shopping web application where all variety of products are available.Here we have an admin page for organizing orders and adding products.",
     tec: ["Node js ", " MongoDB ", " React", " Redux", " Express "],
     category: "Full Stack",
-    demo: "https://giveawayapp153.herokuapp.com/",
+    // demo: "https://giveawayapp153.herokuapp.com/",
   },
   {
     id: "2",
@@ -17,7 +17,7 @@ export const All = [
     desc: " Developed for students, this is similar to Quora where questions are asked and answers can be posted.Used firebase for authentication,storage and deployed on heroku",
     tec: [" React", " Redux", " Firebase"],
     category: "React",
-    demo: "http://cbitstudentservice.herokuapp.com/",
+    // demo: "http://cbitstudentservice.herokuapp.com/",
   },
   {
     id: "3",
@@ -47,7 +47,7 @@ export const All = [
     desc: "An application which recommends courses,books and internships for students.Recommendations are given based on the user priorities",
     tec: ["Python ", " Machine Learning", " React", " Redux", " Firebase "],
     category: "Others",
-    demo: "https://share.streamlit.io/baludeshamoni/student_recommendations/main/student_Recommendations.py",
+    // demo: "https://share.streamlit.io/baludeshamoni/student_recommendations/main/student_Recommendations.py",
   },
   {
     id: "6",
@@ -58,6 +58,6 @@ export const All = [
     desc: "  A MERN-stack web application which is a platform for the developers all around the world.Users can post their idea , can also view and comment on other developers ideas.",
     tec: ["Node js ", " MongoDB ", " React", " Redux", " Express "],
     category: "Full Stack",
-    demo: "http://riseofdevs.herokuapp.com/post",
+    // demo: "http://riseofdevs.herokuapp.com/post",
   },
 ];

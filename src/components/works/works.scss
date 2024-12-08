@@ -121,14 +121,14 @@
 
         .left {
           flex: 4;
-          height: 90%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
 
           .leftcontainer {
-            width: 80%;
-            height: 70%;
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -152,55 +152,13 @@
               }
 
               img {
-                margin-right: 10px;
-                width: 35px;
-                background-color: rgb(230, 174, 185);
-                border-radius: 50%;
+                width: 100%;
+                height: 43vh;
+
                 @include mobile {
                   margin: 0;
                   height: 30px;
                 }
-              }
-              h2 {
-                font-size: larger;
-                text-align: center;
-                font-family: sans-serif;
-                margin: 0;
-                padding: 0;
-                @include mobile {
-                  font-size: x-small;
-                  margin-left: 1px;
-                }
-              }
-            }
-
-            p {
-              font-size: 16px;
-              text-align: left;
-              font-family: sans-serif;
-              @include mobile {
-                display: none;
-              }
-            }
-            a {
-              font-size: 23px;
-              font-weight: 600;
-              cursor: pointer;
-              width: 35%;
-              border-radius: 10px;
-              padding: 10px;
-              margin: 5px;
-              background: $works;
-              color: white;
-
-              @include mobile {
-                font-size: medium;
-                width: 50%;
-                margin: 0;
-                font-weight: lighter;
-              }
-              @include mini {
-                width: 40%;
               }
             }
           }
@@ -212,20 +170,24 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          overflow: hidden;
-          img {
-            width: 520px;
-            height: 60vh;
-            transform: rotate(-10deg);
-            @include mini {
-              width: 520px;
-              height: 75vh;
-            }
-
+          flex-direction: column;
+          h3 {
+            font-size: large;
+            text-align: center;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
             @include mobile {
-              width: 140px;
-              height: 25vh;
-              transform: rotate(0deg);
+              font-size: x-small;
+              margin-left: 1px;
+            }
+          }
+          p {
+            font-size: 16px;
+            text-align: left;
+            font-family: sans-serif;
+            @include mobile {
+              display: none;
             }
           }
         }
