@@ -10,7 +10,7 @@ const About = () => {
     },
   };
 
-  const t1 = "Experience";
+
   const t2 = "Qualifications";
   const t3 = "Experience";
 
